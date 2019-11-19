@@ -5,6 +5,9 @@
     <homeicon></homeicon>
     <!-- 推荐组件 -->
     <recommend></recommend>
+    <!-- 周末组件 -->
+    <weekend></weekend>
+
     
   </div>
 </template>
@@ -15,6 +18,7 @@ import homeheader from '@/views/homecomponents/homeheader'
 import homeswiper from '@/views/homecomponents/homeswiper'
 import homeicon from '@/views/homecomponents/homeicon'
 import recommend from '@/views/homecomponents/recommend'
+import weekend from '@/views/homecomponents/weekend'
 export default {
 
   name: 'home',
@@ -22,7 +26,8 @@ export default {
     homeheader,
     homeswiper,
     homeicon,
-    recommend
+    recommend,
+    weekend
     
   }
 }
