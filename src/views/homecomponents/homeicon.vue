@@ -1,6 +1,6 @@
 <template>
     <div class="imageicon">
-     <swiper >
+     <swiper :options="swiperOption">
         <swiper-slide v-for="(page,index) in pages" :key="index">
         <div class="icon" v-for="item in page" :key="item.id">
             <div class="iconimage"> 
@@ -65,7 +65,10 @@ export default {
                     imgUrl: '//s.qunarzz.com/homenode/images/touchheader/haiwai.png',
                     desc: '海外酒店'
                 }
-            ]
+            ],
+            swiperOption: {
+                autoplay: false
+            }
         }
     },
     computed: {

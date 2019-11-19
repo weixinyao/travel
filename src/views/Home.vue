@@ -14,6 +14,7 @@
 
 <script>
 // @ is an alias to /src
+import axios from 'axios'
 import homeheader from '@/views/homecomponents/homeheader'
 import homeswiper from '@/views/homecomponents/homeswiper'
 import homeicon from '@/views/homecomponents/homeicon'
@@ -29,6 +30,16 @@ export default {
     recommend,
     weekend
     
+  },
+  methods: {
+     requestdata() {
+       axios.get('/api/index.json').then(res => {
+         console.log(res)
+       })
+     }
+  },
+  mounted() {
+    this.requestdata()
   }
 }
 </script>
